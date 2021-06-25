@@ -24,4 +24,44 @@ time, mark, audio, video {
 }
 
 /* General Styling */
+:root {
+    background-color: aliceblue;
+    font-size: 1.2em;
+}
 
+/* Navbar */
+.nav {
+    height: 5vh;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+/* Intro Section */
+h1 {
+    visibility: hidden;
+}
+
+.intro {
+    height: 95vh;
+    text-align: center;
+}
+
+.intro span {
+    font-weight: bold;
+}
+
+/* About Section */
+
+
+/* Project Section */
+
+
+/* Contact Section */
+
+
+/* Footer */
+
+
+/* Mobile Design */
