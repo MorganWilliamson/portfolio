@@ -59,10 +59,29 @@
     <section class="contact" id="contact">
       <h2>Contact</h2>
       
-      <p>Please feel free to reach out with any questions, comments, concerns, or feedback!</p>
+      <p>Please feel free to contact me with any questions, comments, concerns, or feedback!</p>
 
-      <form>
-        <!-- Contact Form Goes Here -->
+      <form method="POST">
+        <ul>
+          <li>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="username">
+          </li>
+
+          <li>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+          </li>
+
+          <li>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="user-message"></textarea>
+          </li>
+
+          <li class="button">
+            <button type="submit">Send Message</button>
+          </li>
+        </ul>
       </form>
     </section>
 
