@@ -23,7 +23,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/* General Styling */
+/*-- General Styling --*/
 :root {
     background-color: aliceblue;
     font-size: 1.2em;
@@ -32,9 +32,9 @@ time, mark, audio, video {
     color: var(--main-font-color);
 }
 
-/* Navbar */
+/*-- Navbar --*/
 .nav {
-    height: 6vh;
+    height: 7vh;
     background: black;
     border-bottom: 2px solid cornflowerblue;
     display: flex;
@@ -43,11 +43,42 @@ time, mark, audio, video {
 }
 
 .nav a {
-    color: white;
+    color: var(--main-font-color);
     text-decoration: none;
 }
 
-/* Intro Section */
+/*-- Nav Animations --*/
+.underline {
+    padding: .5rem 1rem;
+    position: relative;
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    z-index: 1;
+}   
+
+.underline:after {
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    left: 1rem;
+    background-color: var(--main-font-color);
+    transition: all .1s cubic-bezier(.2, 0, 0, 1);
+    transform-origin: bottom center;
+    z-index: -1;
+}
+    
+.underline:hover {
+    color: #2D2D2D;
+}
+
+.underline:hover:after {
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+ 
+/*-- Intro Section --*/
 h1 {
     visibility: hidden;
 }
@@ -74,9 +105,9 @@ h1 {
     animation: 1s blink step-end infinite;
   }
 
-/* Intro Animations */
-
-@keyframes gradient {
+/*-- Intro Animations --*/
+/* Landing BG */
+@keyframes gradient { 
     0% {
         background-position: 0% 50%;
     }
@@ -88,6 +119,7 @@ h1 {
     }
 }
 
+/* Blinking Cursor */
 @keyframes blink {
     from, to {
         color: transparent;
@@ -97,16 +129,16 @@ h1 {
     }
 }
 
-/* About Section */
+/*-- About Section --*/
 
 
-/* Project Section */
+/*-- Project Section --*/
 
 
-/* Contact Section */
+/*-- Contact Section --*/
 
 
-/* Footer */
+/*-- Footer --*/
 
 
-/* Mobile Design */
+/*-- Mobile Design --*/
