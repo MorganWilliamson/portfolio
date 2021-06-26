@@ -130,6 +130,34 @@ h1 {
 }
 
 /*-- About Section --*/
+.about {
+    background-color: rgba(123, 123, 123);
+    padding: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.polaroid {
+    height: 10%;
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2%;
+    display: block;
+}
+
+.polaroid-container {
+    color: black;
+    text-align: center;
+    padding: 1% 2%;
+}
 
 
 /*-- Project Section --*/
