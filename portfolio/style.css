@@ -33,6 +33,11 @@ time, mark, audio, video {
     color: var(--main-font-color);
 }
 
+h2 {
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
 /*-- Navbar --*/
 .nav {
     height: 7vh;
@@ -158,8 +163,6 @@ h1 {
 }
 
 .about h2 {
-    text-decoration: underline;
-    font-size: 1.3rem;
     margin-bottom: 5%;
 }
 
@@ -208,11 +211,6 @@ h1 {
     padding: 1%;
 }
 
-.projects h2 {
-    font-size: 1.3rem;
-    text-decoration: underline;
-}
-
 .projects-container {
     padding: 3%;
     display: flex;
@@ -235,7 +233,25 @@ h1 {
 
 
 /*-- Contact Section --*/
+.contact {
+    color: black;
+    text-align: center;
+    padding: 3%;
+}
 
+.contact ul {
+    list-style-type: none;
+}
+
+.contact h2 {
+    margin: 2% 0%;
+}
+
+.contact-container {
+    outline: 1px solid black;
+    width: 85%;
+    margin: auto;
+}
 
 /*-- Footer --*/
 footer {
