@@ -26,6 +26,7 @@ time, mark, audio, video {
 /*-- General Styling --*/
 :root {
     background-color: aliceblue;
+    box-sizing: border-box;
     font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
     --main-font-color: #f4f4f4;
@@ -201,6 +202,36 @@ h1 {
 
 
 /*-- Project Section --*/
+.projects {
+    background-color: orange;
+    text-align: center;
+    padding: 1%;
+}
+
+.projects h2 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.projects-container {
+    padding: 3%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.projects-container a {
+    text-decoration: none;
+    color: black;
+    outline: 1px solid black;
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin: 1%;
+}
 
 
 /*-- Contact Section --*/
