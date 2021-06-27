@@ -182,6 +182,19 @@ h1 {
 
 
 /*-- Footer --*/
+footer {
+    height: 7vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
 
+footer a {
+    color: var(--main-font-color);
+    text-decoration: none;
+    top: -10;
+}
 
 /*-- Mobile Design --*/
