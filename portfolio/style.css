@@ -330,12 +330,41 @@ h1 {
 }
 
 /* Sticky Note transform */
-.projects-container li a:hover, .projects-container li a:focus {
+.projects-container li a:hover {
     box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
     transform: scale(1.25);
     position: relative;
     z-index: 3;
     transition: all ease-in-out 0.2s;
+}
+
+/* Sticky Note Circling */
+.projects-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.projects-container path {
+    stroke: #DB3157;
+    stroke-width: 3px;
+    stroke-dasharray: 0 1500;
+}
+
+.projects-container a:hover path {
+    animation: draw 1s forwards;
+}
+
+@keyframes draw {
+    from {
+        stroke-dasharray: 0 1500;
+    }
+    to {
+        stroke-dasharray: 1500 1500;
+    }
 }
 
 
