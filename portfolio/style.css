@@ -59,7 +59,7 @@ h2, h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: 2;
+    z-index: 3;
 }
 
 .nav a {
@@ -334,7 +334,7 @@ h1 {
     box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
     transform: scale(1.25);
     position: relative;
-    z-index: 3;
+    z-index: 2;
     transition: all ease-in-out 0.2s;
 }
 
@@ -376,17 +376,13 @@ h1 {
     padding: 3%;
 }
 
-.contact ul {
-    list-style-type: none;
-}
-
 .contact h2 {
     margin: 2% 0%;
 }
 
 .contact-container {
-    outline: 1px solid var(--bg-dark-grey);
-    width: 85%;
+    border: 1px solid var(--bg-dark-grey);
+    /* width: 55%; revist this */
     margin: auto;
 }
 

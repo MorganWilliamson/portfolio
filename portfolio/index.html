@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="/index.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -118,27 +117,40 @@
         
         <p>Interested in working together? Got questions, comments, or feedback? Reach out below!</p>
 
-        <form method="POST">
-          <ul>
-            <li>
-              <label for="name">Name:</label><br>
-              <input type="text" id="name" name="username">
-            </li>
+        <form 
+          id="contact-form" 
+          action="send" 
+          enctype="multipart/form-data" 
+          method="POST">
 
-            <li>
-              <label for="email">Email:</label><br>
-              <input type="email" id="email" name="email">
-            </li>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Your name" 
+            required
+          >
 
-            <li>
-              <label for="message">Message:</label><br>
-              <textarea id="message" name="user-message"></textarea>
-            </li>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Your email address" 
+            aria-describedby="emailHelp"
+            required
+          >
 
-            <li class="button">
-              <button type="submit">Send Message</button>
-            </li>
-          </ul>
+          <textarea 
+            id="message" 
+            name="message" 
+            placeholder="Your message"
+            rows="3" 
+            required
+            >
+          </textarea>
+
+          <button type="submit" value="submit">Send Message</button>
+
         </form>
       </div>
     </section>
@@ -155,5 +167,6 @@
 
       <p>Morgan Williamson | 2021</p>
     </footer>
+    <script type="text/javascript" src="/index.js" defer></script>
   </body>
 </html>
