@@ -113,9 +113,9 @@ h1 {
 }
 
 .intro button {
-    width: 10%;
-    padding: .75%;
-    font-size: .80rem;
+    width: 15%;
+    padding: 1%;
+    font-size: 1rem;
     font-weight: bold;
     margin: auto;
     border: 1px solid var(--font-white);
