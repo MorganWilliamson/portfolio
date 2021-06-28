@@ -266,20 +266,38 @@ h1 {
 
 /*-- Footer --*/
 footer {
-    height: 7vh;
+    /* height: 7vh; */
     color: var(--font-white);
     background-color: black;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-top: 2px solid cornflowerblue;
+    padding-bottom: 1%;
 }
 
 footer a {
     color: var(--font-white);
     text-decoration: none;
-    margin-left: 1%;
+}
+
+.sm-container {
+    display: flex;
+    justify-content: space-between;
+    height: 18%;
+    width: 18%;
+    fill: white;
+    padding: 1% 2%;
+}
+
+.sm-container a {
+    margin: 0% 10%;
+}
+
+.sm-container a:hover {
+    transition: 0.2s ease all;
+    fill: cornflowerblue;
 }
 
 /*-- Mobile Design --*/
