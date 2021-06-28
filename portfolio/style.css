@@ -33,6 +33,7 @@ time, mark, audio, video {
     --font-white: #F4F4F4;
     --bg-white: #FFF;
     --bg-grey: #F5F5FF;
+    --bg-dark-grey: #3b3b3b;
     color: var(--main-font-color);
 }
 
@@ -48,7 +49,7 @@ h2, h3 {
 /*-- Navbar --*/
 .nav {
     height: 7vh;
-    background: black;
+    background: var(--bg-dark-grey);
     border-bottom: 2px solid cornflowerblue;
     display: flex;
     align-items: center;
@@ -126,8 +127,8 @@ h1 {
 }
 
 .intro button:hover {
-    border: 1px solid black;
-    color: black;
+    border: 1px solid var(--bg-dark-grey);
+    color: var(--bg-dark-grey);
 }
 
 .intro span {
@@ -231,8 +232,8 @@ h1 {
 
 .projects-container a {
     text-decoration: none;
-    color: black;
-    outline: 1px solid black;
+    color: var(--bg-dark-grey);
+    outline: 1px solid var(--bg-dark-grey);
     background: yellow;
     display: flex;
     justify-content: center;
@@ -245,7 +246,7 @@ h1 {
 /*-- Contact Section --*/
 .contact {
     background: var(--bg-white);
-    color: black;
+    color: var(--bg-dark-grey);
     text-align: center;
     padding: 3%;
 }
@@ -259,7 +260,7 @@ h1 {
 }
 
 .contact-container {
-    outline: 1px solid black;
+    outline: 1px solid var(--bg-dark-grey);
     width: 85%;
     margin: auto;
 }
@@ -268,7 +269,7 @@ h1 {
 footer {
     /* height: 7vh; */
     color: var(--font-white);
-    background-color: black;
+    background-color: var(--bg-dark-grey);
     display: flex;
     flex-direction: column;
     justify-content: center;
