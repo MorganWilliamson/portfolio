@@ -258,7 +258,7 @@ h1 {
     margin: 3%;
     border: 1px solid rgb(100, 172, 237);
     background: rgb(100, 172, 237, 0.5);
-    
+    border-radius: 12px;
 }
 
 .skills {
@@ -280,29 +280,43 @@ h1 {
 .projects {
     background-color: var(--bg-grey);
     text-align: center;
-    padding: 1%;
+    padding: 1em 0;
 }
 
 .projects-container {
-    padding: 3%;
+    list-style-type: none;    
+}
+
+.projects-container h4 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.projects-container p {
+    font-weight: normal;
+    font-style: .5rem;
+}
+
+.projects-container {
     display: flex;
     flex-flow: row wrap;
-    align-content: center;
     justify-content: center;
+    align-content: center;
 }
 
 .projects-container a {
     text-decoration: none;
-    color: var(--bg-dark-grey);
-    outline: 1px solid var(--bg-dark-grey);
-    background: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    margin: 1%;
+    color: #000;
+    background-color: #FFC;
+    display: block;
+    height: 10em;
+    width: 10em;
+    padding: 1em;
 }
 
+.projects-container li {
+    margin: 1em;
+}
 
 /*-- Contact Section --*/
 .contact {
