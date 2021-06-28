@@ -293,8 +293,9 @@ h1 {
 }
 
 .projects-container p {
-    font-weight: normal;
-    font-style: .5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Indie Flower', cursive;
 }
 
 .projects-container {
