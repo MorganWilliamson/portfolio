@@ -26,14 +26,11 @@ const formEvent = form.addEventListener("submit", (event) => {
 
 const sendMail = (mail) => {
   // base url
-  fetch("url goes here", {
+  fetch("http://morganwilliamson.me/portfolio/", {
     method: "post", // POST data to the server
     body: mail, // mail, because we're sending data
   })
   .then((res) => {
-    return res.json();
-  })
-  .catch((err) => {
-    console.log(err);
+    return res.json()
   })
 }
