@@ -11,4 +11,4 @@ You can find the deployed site [here](http://morganwilliamson.me/portfolio/).
 - CSS
 - JavaScript
 
-The social media SVGs are from [Simple Icons](https://simpleicons.org/), and was originally scaffolded with [Vite](https://vitejs.dev/).
+The social media SVGs are from [Simple Icons](https://simpleicons.org/), and the site was originally scaffolded with [Vite](https://vitejs.dev/).
