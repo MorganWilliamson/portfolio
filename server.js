@@ -13,7 +13,7 @@ app.use(cors({ origin: "*" }));
 
 // Set contact page
 app.route("/").get(function (req, res) {
-    res.sendFile(process.cwd() + "/portfolio"); // Check relative path
+    res.sendFile(process.cwd() + "/portfolio/index.html"); // Check relative path
 })
 
 // Set port
@@ -55,7 +55,7 @@ app.post("/send", (req, res) => {
 
         // Configure mail object
         const mail = {
-            from: data.name,
+            sender: `${data.name} <${data.email}`,
             to: process.env.EMAIL,
             text: `${data.name} <${data.email}> \n${data.message}`
         };
@@ -65,7 +65,7 @@ app.post("/send", (req, res) => {
                 console.log("Error sending message: ", err);
                 res.status(500).send("Something went wrong.");
             } else {
-                res.status(200).send("Email successfully sent!");
+                res.status(200).json({ status: "success" });
             }
         });
     });

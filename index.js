@@ -31,6 +31,6 @@ const sendMail = (mail) => {
     body: mail, // mail, because we're sending data
   })
   .then((res) => {
-    return res.json()
+    return res.json();
   })
 }
