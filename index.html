@@ -115,42 +115,30 @@
       <div class="contact-container">
         <h2>Contact</h2>
         
-        <p>Interested in working together? Got questions, comments, or feedback? Reach out below!</p>
+        <p>Interested in working together? <br> Got questions, comments, or feedback?</p>
 
         <form 
-          id="contact-form" 
-          action="send" 
-          enctype="multipart/form-data" 
-          method="POST">
-
+          action="mailto:morganwilliamsonportfolio@gmail.com?subject=subject&body=body" 
+          method="GET" 
+          target="_blank"
+          class="contact-form"
+          >
+          
+          <h3>Send me an email!</h3>
+          
+          <label for="subject">Email Subject:</label>
           <input 
+            name="subject" 
+            id="subject" 
             type="text" 
-            id="name" 
-            name="name" 
-            placeholder="Your name" 
-            required
-          >
-
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            placeholder="Your email address" 
-            aria-describedby="emailHelp"
-            required
-          >
-
-          <textarea 
-            id="message" 
-            name="message" 
-            placeholder="Your message"
-            rows="3" 
-            required
+            class="input" 
+            placeholder="Email Subject"
             >
-          </textarea>
-
-          <button type="submit" value="submit">Send Message</button>
-
+          
+          <label for="body">Email Body:</label>
+          <textarea name="body" id="body" placeholder="Email Body"></textarea>
+          
+          <input type="submit" value="Create Email">
         </form>
       </div>
     </section>

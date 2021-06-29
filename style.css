@@ -382,13 +382,22 @@ h1 {
 
 .contact-container {
     border: 1px solid var(--bg-dark-grey);
-    /* width: 55%; revist this */
+    width: 50%;
     margin: auto;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 1%;
+    margin: auto;
+}
+
+
 /*-- Footer --*/
 footer {
-    /* height: 7vh; */
     color: var(--font-white);
     background-color: var(--bg-dark-grey);
     display: flex;
