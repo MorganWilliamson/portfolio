@@ -32,7 +32,7 @@
 
     <!-- About -->
     <section class="about" id="about">
-      <img class="polaroid" src="src/profavatar.png" alt="close up picture of bearded man in suit and tie">
+      <img class="polaroid" src="src/profavatar.png" alt="">
       
       <div class="about-content"> 
         <h2>About</h2> 
@@ -117,28 +117,14 @@
         
         <p>Interested in working together? <br> Got questions, comments, or feedback?</p>
 
-        <form 
-          action="mailto:morganwilliamsonportfolio@gmail.com?subject=subject&body=body" 
-          method="GET" 
-          target="_blank"
-          class="contact-form"
-          >
-          
-          <h3>Send me an email!</h3>
-          
-          <label for="subject">Email Subject:</label>
+        <form>
           <input 
-            name="subject" 
-            id="subject" 
-            type="text" 
-            class="input" 
-            placeholder="Email Subject"
-            >
-          
-          <label for="body">Email Body:</label>
-          <textarea name="body" id="body" placeholder="Email Body"></textarea>
-          
-          <input type="submit" value="Create Email">
+            name="mailer"
+            class="mailer" 
+            type="button" 
+            value="Get in touch!" 
+            onclick="window.location.href='mailto:morganwilliamsonportfolio@gmail.com'" 
+            />
         </form>
       </div>
     </section>

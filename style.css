@@ -384,20 +384,27 @@ h1 {
     border: 1px solid var(--bg-dark-grey);
     width: 50%;
     margin: auto;
+    padding: 5%;
+    line-height: 1.6rem;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+.mailer {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: .9rem;
     padding: 1%;
-    margin: auto;
+    color: var(--main-font-color);
 }
 
+.mailer:hover {
+    color: cornflowerblue;
+    transition: all 0.3s ease 0s;
+}
 
 /*-- Footer --*/
 footer {
+    /* height: 7vh; */
     color: var(--font-white);
     background-color: var(--bg-dark-grey);
     display: flex;
