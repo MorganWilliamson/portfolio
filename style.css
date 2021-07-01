@@ -443,3 +443,29 @@ footer a {
         margin: 1% 7%;
     }
 }
+
+@media (max-width: 450px) {
+    .intro button {
+        width: 60%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sm-container {
+        width: 30%;
+        margin: auto;
+    }
+
+    .sm-container a {
+        margin: 0% 5%;
+    }
+}
+
+@media (max-width: 375px) {
+    .intro button {
+        width: 75%;
+    }
+}
