@@ -445,6 +445,10 @@ footer a {
 }
 
 @media (max-width: 450px) {
+    .intro {
+        font-size: 25pt;
+    }
+
     .intro button {
         width: 60%;
     }
