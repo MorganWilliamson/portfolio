@@ -404,7 +404,6 @@ h1 {
 
 /*-- Footer --*/
 footer {
-    /* height: 7vh; */
     color: var(--font-white);
     background-color: var(--bg-dark-grey);
     display: flex;
@@ -439,3 +438,38 @@ footer a {
 }
 
 /*-- Mobile Design --*/
+@media (max-width: 800px) {
+    .sm-container a {
+        margin: 1% 7%;
+    }
+}
+
+@media (max-width: 450px) {
+    .intro {
+        font-size: 25pt;
+    }
+
+    .intro button {
+        width: 60%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sm-container {
+        width: 30%;
+        margin: auto;
+    }
+
+    .sm-container a {
+        margin: 0% 5%;
+    }
+}
+
+@media (max-width: 375px) {
+    .intro button {
+        width: 75%;
+    }
+}
